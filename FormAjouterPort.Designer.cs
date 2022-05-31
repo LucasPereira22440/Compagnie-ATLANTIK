@@ -37,7 +37,7 @@ namespace Compagnie_ATLANTIK
             // lblNomPort
             // 
             this.lblNomPort.AutoSize = true;
-            this.lblNomPort.Location = new System.Drawing.Point(217, 200);
+            this.lblNomPort.Location = new System.Drawing.Point(31, 39);
             this.lblNomPort.Name = "lblNomPort";
             this.lblNomPort.Size = new System.Drawing.Size(56, 13);
             this.lblNomPort.TabIndex = 0;
@@ -45,14 +45,15 @@ namespace Compagnie_ATLANTIK
             // 
             // tbxNomPort
             // 
-            this.tbxNomPort.Location = new System.Drawing.Point(332, 200);
+            this.tbxNomPort.Location = new System.Drawing.Point(110, 36);
             this.tbxNomPort.Name = "tbxNomPort";
             this.tbxNomPort.Size = new System.Drawing.Size(100, 20);
             this.tbxNomPort.TabIndex = 1;
+            this.tbxNomPort.TextChanged += new System.EventHandler(this.tbxNomPort_TextChanged);
             // 
             // btnAjouterPort
             // 
-            this.btnAjouterPort.Location = new System.Drawing.Point(332, 274);
+            this.btnAjouterPort.Location = new System.Drawing.Point(121, 83);
             this.btnAjouterPort.Name = "btnAjouterPort";
             this.btnAjouterPort.Size = new System.Drawing.Size(75, 23);
             this.btnAjouterPort.TabIndex = 2;
@@ -64,7 +65,7 @@ namespace Compagnie_ATLANTIK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(270, 126);
             this.Controls.Add(this.btnAjouterPort);
             this.Controls.Add(this.tbxNomPort);
             this.Controls.Add(this.lblNomPort);

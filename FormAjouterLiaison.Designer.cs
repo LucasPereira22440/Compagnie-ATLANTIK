@@ -83,6 +83,7 @@ namespace Compagnie_ATLANTIK
             this.cmbDepart.Name = "cmbDepart";
             this.cmbDepart.Size = new System.Drawing.Size(121, 21);
             this.cmbDepart.TabIndex = 4;
+            this.cmbDepart.SelectedIndexChanged += new System.EventHandler(this.cmbDepart_SelectedIndexChanged);
             // 
             // cmbArrivee
             // 
@@ -107,6 +108,7 @@ namespace Compagnie_ATLANTIK
             this.tbxDistance.Name = "tbxDistance";
             this.tbxDistance.Size = new System.Drawing.Size(100, 20);
             this.tbxDistance.TabIndex = 7;
+            this.tbxDistance.TextChanged += new System.EventHandler(this.tbxDistance_TextChanged);
             // 
             // btnAjouter
             // 

@@ -89,11 +89,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bateau.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="FormAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAccueil.Designer.cs">
       <DependentUpon>FormAccueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAjouterBateau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjouterBateau.Designer.cs">
+      <DependentUpon>FormAjouterBateau.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAjouterLiaison.cs">
       <SubType>Form</SubType>
@@ -113,10 +121,54 @@
     <Compile Include="FormAjouterSecteur.Designer.cs">
       <DependentUpon>FormAjouterSecteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAjouterTraversee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAjouterTraversee.Designer.cs">
+      <DependentUpon>FormAjouterTraversee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailReservation.Designer.cs">
+      <DependentUpon>FormDetailReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifierBateau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifierBateau.Designer.cs">
+      <DependentUpon>FormModifierBateau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormParametresSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormParametresSite.Designer.cs">
+      <DependentUpon>FormParametresSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTarifsLiaison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTarifsLiaison.Designer.cs">
+      <DependentUpon>FormTarifsLiaison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTraverseesLiaison.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTraverseesLiaison.Designer.cs">
+      <DependentUpon>FormTraverseesLiaison.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Liaison.cs" />
+    <Compile Include="Periode.cs" />
+    <Compile Include="Port.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="Secteur.cs" />
     <EmbeddedResource Include="FormAccueil.resx">
       <DependentUpon>FormAccueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjouterBateau.resx">
+      <DependentUpon>FormAjouterBateau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAjouterLiaison.resx">
       <DependentUpon>FormAjouterLiaison.cs</DependentUpon>
@@ -126,6 +178,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAjouterSecteur.resx">
       <DependentUpon>FormAjouterSecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAjouterTraversee.resx">
+      <DependentUpon>FormAjouterTraversee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailReservation.resx">
+      <DependentUpon>FormDetailReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifierBateau.resx">
+      <DependentUpon>FormModifierBateau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormParametresSite.resx">
+      <DependentUpon>FormParametresSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTarifsLiaison.resx">
+      <DependentUpon>FormTarifsLiaison.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTraverseesLiaison.resx">
+      <DependentUpon>FormTraverseesLiaison.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

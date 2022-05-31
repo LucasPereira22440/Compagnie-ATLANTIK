@@ -29,6 +29,7 @@ namespace Compagnie_ATLANTIK
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAccueil));
             this.mmAccueil = new System.Windows.Forms.MenuStrip();
             this.miAjouter = new System.Windows.Forms.ToolStripMenuItem();
             this.miAjouterSecteur = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,9 @@ namespace Compagnie_ATLANTIK
             this.miAfficherTraversees = new System.Windows.Forms.ToolStripMenuItem();
             this.miAfficherReservation = new System.Windows.Forms.ToolStripMenuItem();
             this.miAPropos = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.mmAccueil.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // mmAccueil
@@ -99,18 +102,21 @@ namespace Compagnie_ATLANTIK
             this.miAjouterTarifs.Name = "miAjouterTarifs";
             this.miAjouterTarifs.Size = new System.Drawing.Size(287, 22);
             this.miAjouterTarifs.Text = "Les tarifs pour une liaison et une période";
+            this.miAjouterTarifs.Click += new System.EventHandler(this.miAjouterTarifs_Click);
             // 
             // miAjouterBateau
             // 
             this.miAjouterBateau.Name = "miAjouterBateau";
             this.miAjouterBateau.Size = new System.Drawing.Size(287, 22);
             this.miAjouterBateau.Text = "Un bateau";
+            this.miAjouterBateau.Click += new System.EventHandler(this.miAjouterBateau_Click);
             // 
             // miAjouterTraversee
             // 
             this.miAjouterTraversee.Name = "miAjouterTraversee";
             this.miAjouterTraversee.Size = new System.Drawing.Size(287, 22);
             this.miAjouterTraversee.Text = "Une traversée";
+            this.miAjouterTraversee.Click += new System.EventHandler(this.miAjouterTraversee_Click);
             // 
             // miModifier
             // 
@@ -126,12 +132,14 @@ namespace Compagnie_ATLANTIK
             this.miModifierBateau.Name = "miModifierBateau";
             this.miModifierBateau.Size = new System.Drawing.Size(191, 22);
             this.miModifierBateau.Text = "Un bateau";
+            this.miModifierBateau.Click += new System.EventHandler(this.miModifierBateau_Click);
             // 
             // miModifierParametres
             // 
             this.miModifierParametres.Name = "miModifierParametres";
             this.miModifierParametres.Size = new System.Drawing.Size(191, 22);
             this.miModifierParametres.Text = "Les paramètres du site";
+            this.miModifierParametres.Click += new System.EventHandler(this.miModifierParametres_Click);
             // 
             // miAfficher
             // 
@@ -148,12 +156,14 @@ namespace Compagnie_ATLANTIK
             this.miAfficherTraversees.Size = new System.Drawing.Size(519, 22);
             this.miAfficherTraversees.Text = "Les traversées pour une liaison et une date donnée avec place restantes par catég" +
     "orie";
+            this.miAfficherTraversees.Click += new System.EventHandler(this.miAfficherTraversees_Click);
             // 
             // miAfficherReservation
             // 
             this.miAfficherReservation.Name = "miAfficherReservation";
             this.miAfficherReservation.Size = new System.Drawing.Size(519, 22);
             this.miAfficherReservation.Text = "Les détails d\'une réservation pour un client";
+            this.miAfficherReservation.Click += new System.EventHandler(this.miAfficherReservation_Click);
             // 
             // miAPropos
             // 
@@ -161,11 +171,21 @@ namespace Compagnie_ATLANTIK
             this.miAPropos.Size = new System.Drawing.Size(67, 20);
             this.miAPropos.Text = "A Propos";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(205, 76);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(377, 277);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mmAccueil);
             this.MainMenuStrip = this.mmAccueil;
             this.Name = "FormAccueil";
@@ -173,6 +193,7 @@ namespace Compagnie_ATLANTIK
             this.Load += new System.EventHandler(this.FormAccueil_Load);
             this.mmAccueil.ResumeLayout(false);
             this.mmAccueil.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,6 +216,7 @@ namespace Compagnie_ATLANTIK
         private System.Windows.Forms.ToolStripMenuItem miAfficherTraversees;
         private System.Windows.Forms.ToolStripMenuItem miAfficherReservation;
         private System.Windows.Forms.ToolStripMenuItem miAPropos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

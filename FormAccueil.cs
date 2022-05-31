@@ -19,7 +19,7 @@ namespace Compagnie_ATLANTIK
 
         private void FormAccueil_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void miAjouterSecteur_Click(object sender, EventArgs e)
@@ -38,6 +38,48 @@ namespace Compagnie_ATLANTIK
         {
             FormAjouterLiaison formAjouterLiaison = new FormAjouterLiaison();
             formAjouterLiaison.ShowDialog();
+        }
+
+        private void miAjouterBateau_Click(object sender, EventArgs e)
+        {
+            FormAjouterBateau formAjouterBateau = new FormAjouterBateau();
+            formAjouterBateau.ShowDialog();
+        }
+
+        private void miModifierParametres_Click(object sender, EventArgs e)
+        {
+            FormParametresSite formParametresSite = new FormParametresSite();
+            formParametresSite.ShowDialog();
+        }
+
+        private void miAfficherReservation_Click(object sender, EventArgs e)
+        {
+            FormDetailReservation formDetailReservation = new FormDetailReservation();
+            formDetailReservation.ShowDialog();
+        }
+
+        private void miAjouterTraversee_Click(object sender, EventArgs e)
+        {
+            FormAjouterTraversee formAjouterTraversee = new FormAjouterTraversee();
+            formAjouterTraversee.ShowDialog();
+        }
+
+        private void miModifierBateau_Click(object sender, EventArgs e)
+        {
+            FormModifierBateau formModifierBateau = new FormModifierBateau();
+            formModifierBateau.ShowDialog();
+        }
+
+        private void miAfficherTraversees_Click(object sender, EventArgs e)
+        {
+            FormTraverseesLiaison formTraverseesLiaison = new FormTraverseesLiaison();
+            formTraverseesLiaison.ShowDialog();
+        }
+
+        private void miAjouterTarifs_Click(object sender, EventArgs e)
+        {
+            FormTarifsLiaison formTarifsLiaison = new FormTarifsLiaison();
+            formTarifsLiaison.ShowDialog();
         }
     }
 }

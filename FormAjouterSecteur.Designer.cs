@@ -37,7 +37,7 @@ namespace Compagnie_ATLANTIK
             // lblNomSecteur
             // 
             this.lblNomSecteur.AutoSize = true;
-            this.lblNomSecteur.Location = new System.Drawing.Point(257, 202);
+            this.lblNomSecteur.Location = new System.Drawing.Point(41, 51);
             this.lblNomSecteur.Name = "lblNomSecteur";
             this.lblNomSecteur.Size = new System.Drawing.Size(73, 13);
             this.lblNomSecteur.TabIndex = 0;
@@ -45,7 +45,7 @@ namespace Compagnie_ATLANTIK
             // 
             // tbxNomSecteur
             // 
-            this.tbxNomSecteur.Location = new System.Drawing.Point(378, 202);
+            this.tbxNomSecteur.Location = new System.Drawing.Point(130, 48);
             this.tbxNomSecteur.Name = "tbxNomSecteur";
             this.tbxNomSecteur.Size = new System.Drawing.Size(100, 20);
             this.tbxNomSecteur.TabIndex = 1;
@@ -53,7 +53,7 @@ namespace Compagnie_ATLANTIK
             // 
             // btnAjouterSecteur
             // 
-            this.btnAjouterSecteur.Location = new System.Drawing.Point(378, 264);
+            this.btnAjouterSecteur.Location = new System.Drawing.Point(145, 100);
             this.btnAjouterSecteur.Name = "btnAjouterSecteur";
             this.btnAjouterSecteur.Size = new System.Drawing.Size(75, 23);
             this.btnAjouterSecteur.TabIndex = 2;
@@ -65,12 +65,13 @@ namespace Compagnie_ATLANTIK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(313, 155);
             this.Controls.Add(this.btnAjouterSecteur);
             this.Controls.Add(this.tbxNomSecteur);
             this.Controls.Add(this.lblNomSecteur);
             this.Name = "FormAjouterSecteur";
             this.Text = "Ajouter un secteur";
+            this.Load += new System.EventHandler(this.FormAjouterSecteur_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
